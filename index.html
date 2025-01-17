@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart Investor Disstrack</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #1a0000;
+            color: white;
+            min-height: 100vh;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 4rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .content {
+            max-width: 600px;
+        }
+
+        .title {
+            font-size: 7rem;
+            font-weight: bold;
+            line-height: 1;
+            background: linear-gradient(135deg, #ff3333 0%, #990000 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 40px rgba(255, 51, 51, 0.3);
+        }
+
+        .description {
+            font-size: 1.25rem;
+            color: #ff9999;
+            margin-bottom: 1.5rem;
+        }
+
+        .stats {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            font-size: 1.125rem;
+        }
+
+        .stat {
+            color: #ff6666;
+        }
+
+        .stat-separator {
+            color: #ff9999;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button-primary {
+            background-color: rgba(153, 0, 0, 0.8);
+            color: white;
+            border: 1px solid rgba(255, 51, 51, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .button-primary:hover {
+            border-color: rgba(255, 51, 51, 0.8);
+        }
+
+        .button-secondary {
+            background: linear-gradient(135deg, #ff3333 0%, #990000 100%);
+            color: white;
+            box-shadow: 0 0 20px rgba(255, 51, 51, 0.3);
+        }
+
+        .download-icon {
+            font-size: 1.2rem;
+        }
+
+        .interface-image {
+            max-width: 50%;
+            height: auto;
+            opacity: 0.7;
+        }
+
+        .features {
+            padding: 4rem;
+            background: linear-gradient(to bottom, transparent, rgba(255, 51, 51, 0.1));
+        }
+
+        .features-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .feature-card {
+            background-color: rgba(153, 0, 0, 0.8);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 0 30px rgba(255, 51, 51, 0.2);
+        }
+
+        .feature-icon {
+            color: #ff3333;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-description {
+            color: #ff9999;
+            line-height: 1.5;
+        }
+
+        .stats-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .stat-card {
+            background-color: rgba(153, 0, 0, 0.8);
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(255, 51, 51, 0.2);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #ff3333 0%, #990000 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #ff9999;
+            font-size: 1.125rem;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .content {
+                max-width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            .interface-image {
+                max-width: 100%;
+            }
+
+            .features-grid,
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero,
+            .features {
+                padding: 2rem;
+            }
+            
+            .title {
+                font-size: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <div class="content">
+                <h1 class="title">Cat Hub<br>Executor</h1>
+                <p class="description">hes a fagggot</p>
+                <div class="stats">
+                    <span class="stat">100% sebx</span>
+                    <span class="stat-separator">•</span>
+                    <span class="stat">100% secks</span>
+                </div>
+                <div class="buttons">
+                    <a href="eeee" class="button button-primary">
+                        <span class="download-icon">↓</span>
+                        The Disstrack
+                    </a>
+                    <a href="https://discord.gg/XgWrSbEfsn" class="button button-secondary">
+                        Join Discord
+                    </a>
+                </div>
+            </div>
+            <img src="https://cdn.discordapp.com/attachments/1294028637833527358/1320172339811454976/image.png?ex=678ae8cd&is=6789974d&hm=00ac85c89cfc63ff03c1fe51e45ddd5bd6d6e1ef2af8b7fb2f841017e2db91f9&" alt="Executor interface" class="interface-image">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚔️</div>
+                <h2 class="feature-title">ezzz</h2>
+                <p class="feature-description">hes so shit</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h2 class="feature-title">best one</h2>
+                <p class="feature-description">Lightning-fast script execution with minimal impact on game performance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+                <h2 class="feature-title">anti chatgpt</h2>
+                <p class="feature-description">not made by chatgpt</p>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">best one</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">won</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">ez</div>
+                <div class="stat-label">trump better</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
